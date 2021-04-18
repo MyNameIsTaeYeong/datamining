@@ -80,7 +80,7 @@
 >
 >            -> split 이후 얻는 GAIN은 최대한 많은 partition들을 가지면서 각 partition이 최대한 작을때 커진다. 그러나 partition이 작으면 합리적인 예측을 하는데 도움이 되지 않는다.
 >           - GAIN Ratio : partition의 개수가 많아질수록 값이 적게 나온다.
->               $$GainRATIO_{split} = \frac{GAIN_{split}}{SplitINFO}$$
+>               $$ GainRATIO_{split} = \frac{GAIN_{split}}{SplitINFO} $$
 >               $$SplitINFO = -\sum\limits_{i=1}^k\frac{n_i}{n}log\frac{n_i}{n}$$
 >           - Classification Error
 >               $$Error(t) = 1- max_jp(j|t)$$
