@@ -107,4 +107,10 @@
 >          2. 가장 많은 positive값과 가장 적은 negative 값을 커버하는 규칙을 고른다.
 >          3. 2번의 규칙에 의해 커버되는 요소들을 제거한다.
 >          4. 반복한다. 
+>       - Metrics for Rule Evaluation
+>           - <img src="https://latex.codecogs.com/gif.latex?Accuracy&space;=&space;\frac{n_c}{n}" title="Accuracy = \frac{n_c}{n}" />
+>           - <img src="https://latex.codecogs.com/gif.latex?Laplace&space;=&space;\frac{n_c&plus;1}{n&plus;k}" title="Laplace = \frac{n_c+1}{n+k}" />
+>           - <img src="https://latex.codecogs.com/gif.latex?M-estimate&space;=&space;\frac{n_c&plus;kp}{n&plus;k}" title="M-estimate = \frac{n_c+kp}{n+k}" />
+>           - <img src="https://latex.codecogs.com/gif.latex?FOIL's&space;information&space;gain&space;=&space;p_1*(log_2{\frac{p_1}{p_1&plus;n_1}}-log_2{\frac{p_0}{p_0&plus;n_0}})" title="FOIL's information gain = p_1*(log_2{\frac{p_1}{p_1+n_1}}-log_2{\frac{p_0}{p_0+n_0}})" />
+>   - K-Nearest Neighbor Classifier
 
