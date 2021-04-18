@@ -70,7 +70,7 @@
 >           - Determine when to stop splitting
 >       - How to determine the best split : Measures of Impurity 
 >           - GINI  
->               $$1 - \sum[p(j|t)]^2$$
+>               <img src="https://latex.codecogs.com/gif.download?1%20-%20%5Csum%5Bp%28j%7Ct%29%5D%5E2"/>
 >           - GINI(split)
 >               $$\sum\limits_{i=1}^k\frac{n_i}{n}GINI(i)$$
 >           - Entropy(t) 
