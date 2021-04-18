@@ -86,6 +86,7 @@
 >           - GAIN Ratio : partition의 개수가 많아질수록 값이 적게 나온다.
 > 
 >               <img src="https://latex.codecogs.com/svg.latex?\inline&space;GainRATIO_{split}&space;=&space;\frac{GAIN_{split}}{SplitINFO}" title="GainRATIO_{split} = \frac{GAIN_{split}}{SplitINFO}" />
+> 
 >               <img src="https://latex.codecogs.com/svg.latex?\inline&space;SplitINFO&space;=&space;-\sum\limits_{i=1}^k\frac{n_i}{n}log\frac{n_i}{n}" title="SplitINFO = -\sum\limits_{i=1}^k\frac{n_i}{n}log\frac{n_i}{n}" />
 >           - Classification Error
 > 
