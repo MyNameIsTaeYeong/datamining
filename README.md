@@ -112,5 +112,9 @@
 >           - <img src="https://latex.codecogs.com/gif.latex?Laplace&space;=&space;\frac{n_c&plus;1}{n&plus;k}" title="Laplace = \frac{n_c+1}{n+k}" />
 >           - <img src="https://latex.codecogs.com/gif.latex?M-estimate&space;=&space;\frac{n_c&plus;kp}{n&plus;k}" title="M-estimate = \frac{n_c+kp}{n+k}" />
 >           - <img src="https://latex.codecogs.com/gif.latex?FOIL's&space;information&space;gain&space;=&space;p_1*(log_2{\frac{p_1}{p_1&plus;n_1}}-log_2{\frac{p_0}{p_0&plus;n_0}})" title="FOIL's information gain = p_1*(log_2{\frac{p_1}{p_1+n_1}}-log_2{\frac{p_0}{p_0+n_0}})" />
->   - K-Nearest Neighbor Classifier
+>   - K-Nearest Neighbor Classifier : 가장 가까운 K개의 요소중 다수를 차지하는 것을 class label로 한다. 가까운 정도를 측정하는 여러 방법들이 존재한다.
+>       - Distance Measures : 직선거리
+>       - Correlation : Pearson
+>       - Similarity Measures : simple matching coefficient, Jaccard Similarity, Cosine Similarity
+ 
 
