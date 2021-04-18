@@ -58,3 +58,45 @@
 >     - By descriptive statistics : 평균, 분포, correlation 등을 파악
 >     - By visualization techniques : 다차원 공간에 데이터를 찍어봄으로써 시각적으로 파악.
 
+> ## Classification
+> -> 과거의 데이터를 사용해서 미래의 특정 값을 예측하는 것.이때 미래의 특정 값은 범위가 정해져 있다. 핵심 작업은 입력에 의한 출력을 정하는 모델을 세우는 것이다.
+> - ### Classification Techniques
+>   - Decision Tree Induction
+>       - Hunt’s Algorithm : 동일한 class label을 갖도록 노드를 계속 나눈다.
+>       - Design issues of Decision Tree
+>           - Determine how to split the records at each iteration
+>               - How to specify the test condition for attributes
+>               - How to determine the best split
+>           - Determine when to stop splitting
+>       - How to determine the best split : Measures of Impurity 
+>           - GINI  
+>               $$1 - \sum[p(j|t)]^2$$
+>           - GINI(split)
+>               $$\sum\limits_{i=1}^k\frac{n_i}{n}GINI(i)$$
+>           - Entropy(t) 
+>               $$-\sum\limits_jp(j|t)\log_{2}p(j|t)$$
+>           - GAIN for the split
+>               $$Entropy(before) - [\sum\limits_{i=1}^k\frac{n_i}{n}Entropy(i)](after)$$
+>
+>            -> split 이후 얻는 GAIN은 최대한 많은 partition들을 가지면서 각 partition이 최대한 작을때 커진다. 그러나 partition이 작으면 합리적인 예측을 하는데 도움이 되지 않는다.
+>           - GAIN Ratio : partition의 개수가 많아질수록 값이 적게 나온다.
+>               $$GainRATIO_{split} = \frac{GAIN_{split}}{SplitINFO}$$
+>               $$SplitINFO = -\sum\limits_{i=1}^k\frac{n_i}{n}log\frac{n_i}{n}$$
+>           - Classification Error
+>               $$Error(t) = 1- max_jp(j|t)$$
+>       - Determine when to stop splitting : training set에 맞출수록 test set에 대한 적중률이 떨어질 수 있다. Overfitting이라는 것이 존재하기 때문. Overfitting은 outliers에 의해 발생.
+>           - Early stopping
+>           - Post-pruning
+>    - Rule-based Classifier : "if ... then"규칙을 써서 records을 분류하는 것.
+>       - Quality Measures for Classification Rule
+>           - Coverage of a rule : 룰이 다루는 레코드가 전체중에 몇개 인지 측정.
+>           - Accuracy of a rule : 룰이 맞추는 정확도가 몇인지 측정.
+>       - Properties of Rule-Based Classifier
+>           - Mutually exclusive rule set : 모든 인스턴스들이 많아야 1개의 규칙에 의해 커버된다. 이 특성을 갖추기 위해 default rule을 추가한다.
+>           - Exhaustive rule set : 모든 인스턴스들이 최소 1개의 규칙에 의해 커버된다. 이 특성을 갖추기 위해 규칙에 순서를 부여하거나 또는 투표를 한다.
+>       - Sequential Covering Algorithm : 바로 데이터셋으로 부터 규칙을 추출하는 알고리즘.
+>          1. class 1개를 고른다.
+>          2. 가장 많은 positive값과 가장 적은 negative 값을 커버하는 규칙을 고른다.
+>          3. 2번의 규칙에 의해 커버되는 요소들을 제거한다.
+>          4. 반복한다. 
+
