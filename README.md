@@ -134,3 +134,5 @@
 >     - <img src="https://latex.codecogs.com/gif.latex?P(Y|X)=\frac{P(Y)*P(X|Y)}{P(X)}" title="P(Y|X)=\frac{P(Y)*P(X|Y)}{P(X)}" />
 >     - 조건부 확률을 구할때, 각 사건이 독립적이라 가정하고 확률을 구한다.<img src="https://latex.codecogs.com/gif.latex?P(A_1,A_2,...,A_n|C)=\prod_{i=1}^{n}P(A_i|C)" title="P(A_1,A_2,...,A_n|C)=\prod_{i=1}^{n}P(A_i|C)" />
 >     - 연속값을 가지는 특성에 대해서는 확률밀도함수를 사용한다.
+>   - Artificial Neural Networks - Perceptron : 입력에 대한 가중치를 정하는 모델.
+>     <a href="https://www.codecogs.com/eqnedit.php?latex=w_j^{(k&plus;1)}=w_j^{(k)}&plus;\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w_j^{(k&plus;1)}=w_j^{(k)}&plus;\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" title="w_j^{(k+1)}=w_j^{(k)}+\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" /></a>
