@@ -140,4 +140,4 @@
 >
 >       <a href="https://www.codecogs.com/eqnedit.php?latex=w_j^{(k&plus;1)}=w_j^{(k)}&plus;\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w_j^{(k&plus;1)}=w_j^{(k)}&plus;\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" title="w_j^{(k+1)}=w_j^{(k)}+\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" /></a>
 >
->       - Multilayer Perceptron : not linearly separable problem을 해결하기 위해 hidden layers를 삽입.
+>     - Multilayer Perceptron : not linearly separable problem을 해결하기 위해 hidden layers를 삽입.
