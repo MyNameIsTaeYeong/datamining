@@ -141,3 +141,12 @@
 >       <a href="https://www.codecogs.com/eqnedit.php?latex=w_j^{(k&plus;1)}=w_j^{(k)}&plus;\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w_j^{(k&plus;1)}=w_j^{(k)}&plus;\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" title="w_j^{(k+1)}=w_j^{(k)}+\lambda{(y_i-\hat{y}_i^{(k)})}x_{ij}" /></a>
 >
 >     - Multilayer Perceptron : not linearly separable problem을 해결하기 위해 hidden layers를 삽입.
+>
+>   - Ensemble Methods : 다수의 classifier들의 예측을 합쳐서 예측정확도를 높이는 기술. 이사회(classifiers)의 의사결정방식과 유사하다.
+>     - 중요 조건 :
+>       1. 각 classifier의 결과는 독립적이어야 한다.
+>       2. 각 classifier의 error rate은 50% 미만이어야 한다.
+>     - 각 classifier의 독립성을 이루는 방법
+>       - Bagging : training set을 변화시켜 독립적인 classifier model을 만든다.
+>         1. original data set의 사이즈만큼 data를 복원추출한다.
+>         2. 복원추출된 데이터set들로 classifier model을 만든다.
