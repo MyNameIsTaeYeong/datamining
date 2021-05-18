@@ -150,3 +150,11 @@
 >       - Bagging : training set을 변화시켜 독립적인 classifier model을 만든다.
 >         1. original data set의 사이즈만큼 data를 복원추출한다.
 >         2. 복원추출된 데이터set들로 classifier model을 만든다.
+>       - Boosting : 이전의 잘못 분류된 데이터에 집중하여 training examples의 분포를 변화시키는 절차.
+>         1. 처음 N개의 examples에 동일한 weight를 할당한다.
+>         2. training examples의 weight에 기반하여 boosting sample을 만든다.
+>         3. boosting sample에 기반하여 classifier를 만들고 원래의 training data에 테스트한다.
+>         4. 3번의 결과에 따라 weight를 업데이트한다.
+>         5. 원하는 모델의 수를 만족시킬때 까지 반복한다.
+>         6. 결과를 취합한다.
+>       - Adaboost : base model의 성능에 따라 가중치를 부여하고, training record의 가중치를 변화시킨다.<br><a href="https://www.codecogs.com/eqnedit.php?latex=\epsilon&space;_i&space;=&space;\frac{1}{N}\sum_{j=1}^{N}\omega_j\delta(C_i(x_j)&space;\neq&space;y_j)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\epsilon&space;_i&space;=&space;\frac{1}{N}\sum_{j=1}^{N}\omega_j\delta(C_i(x_j)&space;\neq&space;y_j)" title="\epsilon _i = \frac{1}{N}\sum_{j=1}^{N}\omega_j\delta(C_i(x_j) \neq y_j)" /></a><br><a href="https://www.codecogs.com/eqnedit.php?latex=\alpha&space;_i=\frac{1}{2}ln(\frac{1-\epsilon&space;_i}{\epsilon&space;_i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha&space;_i=\frac{1}{2}ln(\frac{1-\epsilon&space;_i}{\epsilon&space;_i})" title="\alpha _i=\frac{1}{2}ln(\frac{1-\epsilon _i}{\epsilon _i})" /></a><br><a href="https://www.codecogs.com/eqnedit.php?latex=\omega&space;_i^{(j&plus;1)}=\frac{\omega&space;_i^{(j)}}{Z_j}\left\{\begin{matrix}&space;exp^{-\alpha&space;_j}\\&space;exp^{\alpha&space;_j}&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\omega&space;_i^{(j&plus;1)}=\frac{\omega&space;_i^{(j)}}{Z_j}\left\{\begin{matrix}&space;exp^{-\alpha&space;_j}\\&space;exp^{\alpha&space;_j}&space;\end{matrix}\right." title="\omega _i^{(j+1)}=\frac{\omega _i^{(j)}}{Z_j}\left\{\begin{matrix} exp^{-\alpha _j}\\ exp^{\alpha _j} \end{matrix}\right." /></a>
