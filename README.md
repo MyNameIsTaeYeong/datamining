@@ -164,3 +164,17 @@
 >     - Holdout Method : original data를 training data와 test data로 나누는 것.
 >     - Random subsampling : Holdout Method를 여러번 반복하여 정확도의 평균을 내보는 것.
 >     - K-fold cross validation : partition을 k개로 구성한다. 1개는 test용, k-1개는 training용으로 사용한다. k번 반복하여 모든 경우에 대해 평가한다.
+
+> ## Clustering
+>
+> : 데이터셋에서 의미있는 그룹을 식별하는 과정
+>
+> - K-Means Clustering : 데이터셋을 k개의 cluster로 나누는 방법.
+>
+>   1. k개의 초기의 centroid를 임의로 정한다.
+>   2. k개의 centroid에 가까운 점들을 cluster로 묶는다.
+>   3. 각 cluster의 centroid를 계산한다.
+>   4. centroid가 더이상 변하지 않을때까지 반복한다.
+>
+>   - Key Issue
+>     1. Initiation : 초기의 centroid들에 따라 다른 cluster들이 만들어진다.
