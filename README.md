@@ -178,3 +178,10 @@
 >
 >   - Key Issue
 >     1. Initiation : 초기의 centroid들에 따라 다른 cluster들이 만들어진다.
+>     2. Empty Clusters : cluster가 할당되지 않는 point들이 생길 수 있다.
+>     3. Outliers : SSE가 centroid를 정하는데 사용되므로, outlier들에 취약하다.
+>     4. Post Processing : 초기의 centroid에 영향을 많이 받으므로, Post Processing으로 더 나은 solution을 찾는데 도움이 될 수 있다.
+>   - Limitations
+>     1. Differing sizes of clusters
+>     2. Differing densities of clusters
+>     3. Finding non-globular shapes of clusters
